@@ -1,0 +1,63 @@
+.Gallery {
+  width:  100%;
+  display: block;
+}
+
+.Gallery__nav {
+  width: 100%;
+  display: flex;
+}
+
+.Gallery__nav__thumb {
+  width:  100%;
+  cursor: pointer;
+  float:  left;
+}
+
+.Gallery__nav__thumb img {
+  width:  100%;
+}
+
+.Gallery__main {
+  position: relative;
+  clear:  both;
+  width: 100%;
+}
+
+.Gallery__main__image {
+  position: absolute;
+  top:  0;
+  left: 0;
+  width:  100%;
+  will-change: opacity;
+}
+
+.Gallery-enter-active {
+  z-index:  1;
+  animation:  fadeIn 0.5s ease-in-out backwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* other options for animations that are quite nice */
+/* .Gallery-leave-active {
+  animation:  fadeIn 0.5s ease-in-out backwards reverse;
+} */
+
+/* zoom instead */
+/* @keyframes zoom {
+  0% {
+    transform:  scale(0);
+  }
+
+  100% {
+    transform:  scale(1);
+  }
+} */
